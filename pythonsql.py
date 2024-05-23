@@ -11,9 +11,12 @@ print("Conexão Bem Sucedida")
 
 cursor = conexao.cursor()
 
-comando = """INSERT INTO Vendas(id_venda, cliente, produto, data_venda, preco, quantidade)
+
+
+comando = f"""INSERT INTO Vendas(id_venda, cliente, produto, data_venda, preco, quantidade)
 VALUES
-    (6, 'Henderson', 'Celular', '22/05/2024', 2500, 2)"""
+    (7, 'Silva', 'Painel Solar', '22/04/2023', 2500, 2 )"""
+
 
 cursor.execute(comando)
 cursor.commit()
